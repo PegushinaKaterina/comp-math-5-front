@@ -194,6 +194,7 @@ export default {
             fOptions: [
                 {value: 1, name: 'sin(x)'},
                 {value: 2, name: 'x³'},
+                {value: 3, name: 'cos(x)'}
             ],
             a: 0,
             b: 0,
@@ -394,8 +395,10 @@ export default {
                     point[0] = (this.a * 1 + i * h).toFixed(4);
                     if (this.f === 1){
                         point[1] = Math.sin(point[0]).toFixed(4);
-                    } else {
+                    } else if (this.f === 2) {
                         point[1] = Math.pow(point[0], 3).toFixed(4);
+                    } else {
+                        point[1] = Math.cos(point[0]).toFixed(4);
                     }
                     points[i] = point
                     this.updateValues(this.numberOfPoints, points);

@@ -1,11 +1,11 @@
 <template>
     <div class="app">
         <div class="header">
-            <h2>Лабораторная работа №4</h2>
+            <h2>Лабораторная работа №5</h2>
         </div>
         <div class="main">
             <div class="userInput">
-                <my-button type="button" @click="solveIntegral()">Аппроксимировать функцию</my-button>
+                <my-button type="button" @click="solveIntegral()">Интерполировать функцию</my-button>
             </div>
         </div>
     </div>
